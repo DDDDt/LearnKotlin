@@ -60,14 +60,14 @@ val person = Person("dt")
 // 方法重写 -> 与 java 不一样, 被重写的成员需要显示修饰符修饰 open
 // 覆盖属性也需要
 // 使用 super 来调用基类
-open class Base(p: Int){
+open class Base1(p: Int){
     open val x: Int = 1
     open fun v(){}
     fun nv(){}
 }
 
 // 从 Base 继承
-class Derived(p: Int): Base(p){
+class Derived1(p: Int): Base1(p){
     override val x: Int = super.x + 1
     override fun v(){}
 }
